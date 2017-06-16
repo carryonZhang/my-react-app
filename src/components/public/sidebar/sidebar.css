@@ -1,0 +1,8 @@
+.sidebar {
+	position: absolute;
+	right:	-100%;
+	top: 30%;
+}
+.sidebar .item {
+
+}

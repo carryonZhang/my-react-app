@@ -1,0 +1,42 @@
+.wrap.container-fluid {
+	padding: 0.1333rem 0.2667rem 0;
+}
+
+.news-wrap {
+	height: 9em;
+	color: inherit;
+	margin-bottom: 0.2rem;
+	position: relative;
+}
+
+
+.news {
+	padding: 0.2em 0 0.2em 0.3em;
+}
+.title {
+	font-weight: 700;
+	font-size: 16px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	/*line-height: 0.64rem;*/
+}
+.content {
+	height:	6em;
+	text-indent: 2em;
+	text-align: justify;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.news-wrap:nth-of-type(odd) .image{
+	background: url(../../../image/ig.jpeg) no-repeat center center;
+	background-size: 100% 100%;
+	/*由于本人的ps软件坏了，无法对图片进行修改，只好用了100%的值*/
+}
+.news-wrap:nth-of-type(even) .image {
+	background: url(../../../image/ig2.jpeg) no-repeat center center;
+	background-size: 100% 100%;
+}
