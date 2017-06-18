@@ -3,34 +3,61 @@
 }
 
 .news-wrap {
-	height: 9em;
+	/*height: 9em;*/
 	color: inherit;
 	margin-bottom: 0.2rem;
 	position: relative;
 }
 
-
-.news {
-	padding: 0.2em 0 0.2em 0.3em;
+dl.flex-left {
+	margin: 0;
 }
+
+.news-wrap-dt {
+}
+
+.news-wrap-img {
+}
+.news {
+	display: flex;
+	padding: 0 0 0 0.2rem;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+}
+
+
+
 .title {
 	font-weight: 700;
-	font-size: 16px;
+	font-size: 0.42667rem;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
 	overflow: hidden;
-	white-space: nowrap;
 	text-overflow: ellipsis;
-	/*line-height: 0.64rem;*/
 }
-.content {
+
+.intro {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.comment-img {
+	width: 0.5rem;
+	height:	0.5rem;
+	margin-left: .1rem;
+}
+
+/*.content {
 	height:	6em;
 	text-indent: 2em;
 	text-align: justify;
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
-	-webkit-line-clamp: 4;
+	-webkit-line-clamp: 2;
 	overflow: hidden;
 	text-overflow: ellipsis;
-}
+}*/
 .news-wrap:nth-of-type(odd) .image{
 	background: url(../../../image/ig.jpeg) no-repeat center center;
 	background-size: 100% 100%;
