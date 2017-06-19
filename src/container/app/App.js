@@ -14,7 +14,7 @@ class App extends Component {
 		const {loadingShow, requestError} = this.props;
 		return (
 			<div className="App">
-				{this.props.children}
+				<div>{this.props.children}</div>
 				<Loading show={loadingShow} error={requestError}/>
 			</div>
 		);

@@ -3,6 +3,7 @@
  */
 import React, {Component} from 'react';
 import { connect } from "react-redux";
+import { withRouter } from 'react-router';
 
 import NewsList from '../../components/news/newslist';
 import * as action from '../../action';
@@ -31,4 +32,4 @@ const mapDispatchToProps = (dispatch) => ({
 	dispatch
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(NewsContainer);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(NewsContainer));

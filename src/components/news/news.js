@@ -17,7 +17,7 @@ const News = (props) => {
 	const { title, id, comments } = props.ns;
 	{/*<div className="content">{ content }</div>*/}
 	return (
-		<Link to={{pathname: `/detail/${id}`}} className="news-wrap flex-left" href="#">
+		<Link to={{pathname: `/detail/${id}`}} className="news-wrap flex-left">
 			<dl className="flex-left">
 				<dt className="news-wrap-dt unit-1-3">
 					<img className="news-wrap-img" src={ig} alt="ig战队成员照"/>
@@ -32,7 +32,6 @@ const News = (props) => {
 					</div>
 				</dd>
 			</dl>
-
 		</Link>
 	)
 }

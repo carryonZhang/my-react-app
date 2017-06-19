@@ -15,14 +15,12 @@ class Routers extends Component {
 
 	render() {
 		return (
-			<HashRouter history={hashHistory}>
+			<BrowserRouter>
 				<App>
-					<Switch>
 						<Route path="/" exact component={NewsContainer}></Route>
 						<Route path="/detail/:id" component={DetailContainer}></Route>
-					</Switch>
 				</App>
-			</HashRouter>
+			</BrowserRouter>
 		)
 	}
 }

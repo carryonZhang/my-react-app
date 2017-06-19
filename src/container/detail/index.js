@@ -3,6 +3,7 @@
  */
 import React, { Component } from 'react';
 import { connect } from "react-redux";
+import { withRouter } from 'react-router';
 
 import NewsDetail from '../../components/detail';
 
@@ -24,4 +25,4 @@ class DetailContainer extends Component {
 // });
 
 
-export default DetailContainer;
+export default withRouter(DetailContainer);
