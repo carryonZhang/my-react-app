@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
-import * as action from '../../action';
+import { withRouter } from 'react-router';
 
 import Loading from '../../components/public/loading/index';
-import NewsList from '../../components/news/newslist';
 
-import logo from './images/dota2.png';
 import './styles/App.css';
 
 class App extends Component {
@@ -33,4 +31,4 @@ const mapDispatchToProps = (dispatch) => ({
 	dispatch
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));

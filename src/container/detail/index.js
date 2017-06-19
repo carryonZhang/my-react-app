@@ -25,4 +25,4 @@ class DetailContainer extends Component {
 // });
 
 
-export default withRouter(DetailContainer);
+export default withRouter(connect()(DetailContainer));
