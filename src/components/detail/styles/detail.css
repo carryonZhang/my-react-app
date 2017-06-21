@@ -1,0 +1,71 @@
+.detail-title {
+	font-size: 0.6rem;
+}
+
+.image {
+	margin-top: 0.5rem;
+	max-width: 100%;
+}
+.content {
+	text-indent: 2em;
+	font-size: 0.4rem;
+	margin-top: 0.5rem;
+}
+
+.flex-right	{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.heart {
+	position: relative;
+	font-size: 2em;
+	padding-right: 0.4em;
+}
+.heart [id="toggle-heart"] {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 1em;
+	height:	1em;
+	opacity: 0;
+}
+.heart [for='toggle-heart'] {
+	font-family: "微软雅黑";
+	color: #aab8c2;
+	position: relative;
+	cursor: pointer;
+}
+.heart [for='toggle-heart']:before, [for='toggle-heart']:after {
+	position: absolute;
+	z-index: -1;
+	top: 50%;
+	left: 50%;
+	border-radius: 50%;
+	content: '';
+}
+.heart [for='toggle-heart']::before {
+	margin: -2.25rem;
+	width: 4.5rem; height: 4.5rem;
+	background: gold;
+}
+
+.heart [for='toggle-heart']:before {
+	box-sizing: border-box;
+	border: solid 2.25rem #e2264d;
+	transform: scale(0);
+}
+[id='toggle-heart']:checked + label {
+	color: #e2264d;
+}
+@keyframes heart {
+	0%, 17.5% {
+		font-size: 0;
+	}
+}
+
+[id='toggle-heart']:checked + label {
+	will-change: font-size;
+	animation: heart 1s cubic-bezier(.17, .89, .32, 1.49);
+}
